@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+<head>
+<meta charset="utf-8" />
+<title>menu principale</title>
+<link rel="stylesheet" type="text/css"
+	href="../static/css/bootstrap.min.css"
+	th:href="@{/css/bootstrap.min.css}" />
+
+<link rel="stylesheet" type="text/css" href="../static/css/myStyle.css"
+	th:href="@{/css/myStyle.css}" />
+
+</head>
+
+
+
+<body>
+
+<div class="dropdown">
+	<button class="btn btn-default dropdown-toggle" type="button"
+		id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+		aria-expanded="true">
+		Menu déroulant <span class="caret"></span>
+	</button>
+	<div>
+	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		<li class="dropdown-header">Etiquette header</li>
+		<li><a href="#" title="Lien 1">Lien 1</a></li>
+		<li><a href="#" title="Lien 2">Lien 2</a></li>
+		<li><a href="#" title="Lien 3">Lien 3</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="#" title="Lien 4">Lien 4</a></li>
+	</ul>
+	</div>
+	</div>
+	
+	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a th:href="@{Index}">Accueil</a></li>
+				<li><a href="#" th:href="@{Index}">Clients</a></li>
+
+
+			</ul>
+
+
+		</div> -->
+
+
+<!-- 	</div> -->
+
+
+	<div layout:fragment="content"></div>
+
+</body>
+</html>
